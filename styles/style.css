@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --white: white;
+    --bg-color: black;
+    --color: var(--white); 
+}
+
+body.light {
+    --bg-color: var(--white);
+    --color: black;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.clock-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    color: var(--color);
+}
+
+.clock {
+    font-size: 100pt;
+}
+
+.settings {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 45%;
+    height: 45%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    border: 2.5px solid black;
+}
+
+.settings button {
+    border: 1px solid black;
+    padding: 3px;
+    background: transparent;
+    font-size: 20px;
+}
+
+#settings {
+    display: none;
+}
+
+label {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 13px;
+    bottom: 3px;
+    user-select: none;
+    color: var(--color);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#settings:checked ~ .settings {
+    display: flex;
+}
+
+.light-dark {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 13px;
+    top: 13px;
+    user-select: none;
+    color: var(--color);
+    font-size: 35px;
+    cursor: pointer;
+}
