@@ -17,7 +17,10 @@
         <ion-icon name="settings-sharp"></ion-icon>
     </label>
     <div class="settings">
-        <button id="hide" onClick="hideSeconds()"></button>
+        <button id="hide-seconds" onClick="hideSeconds()"></button>
+        <button id="alarm-toggle" onClick="toggleAlarm()"></button>
+
+        <div id="alarm-set-time">Set Alarm: <input type="time" name="alarm-time" id="alarm-time" min="00:00" max="00:00" step="5"></div>
     </div>
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -35,7 +35,7 @@ function getP(cname) {
 }
 
 seconds = getP('preferences-show-seconds') == 'false' ? false : true
-document.getElementById('hide').innerHTML = `${seconds ? 'Hide' : 'Show'} Seconds`
+document.getElementById('hide-seconds').innerHTML = `${seconds ? 'Hide' : 'Show'} Seconds`
 let lightTheme = getP('preferences-light-theme') == 'true' ? true : false
 if (lightTheme)
     document.body.classList.add('light')
