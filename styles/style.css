@@ -59,6 +59,12 @@ body {
     font-size: 20px;
 }
 
+.settings button[data-selected="true"] {
+    background: var(--color);
+    color: var(--bg-color);
+    border-color: var(--bg-color);
+}
+
 #settings {
     display: none;
 }
