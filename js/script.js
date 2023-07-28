@@ -1,3 +1,5 @@
+window.onerror = (a,b,c) => alert(`${a}\n${b}\n${c}`)
+
 let clock = document.getElementById('clock')
 
 function startTime() {
